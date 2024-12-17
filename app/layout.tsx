@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="min-h-screen flex flex-col bg-gradient-to-b from-red-500 to-yellow-300 font-sans antialiased ">
+      <body className="">
         <Providers>
           <div className="fixed top-0 left-0 right-0 z-50">
             <SiteHeader />

@@ -6,17 +6,17 @@ const DecksPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">
+      <h1 className="text-3xl font-bold mb-8 text-center text-foreground">
         Our Deck Solutions
       </h1>
 
       <Carousel images={deckImages} />
 
       <div className="max-w-3xl mx-auto mt-8 text-center">
-        <h2 className="text-2xl font-semibold mb-4 text-gray-700">
+        <h2 className="text-2xl font-semibold mb-4 text-foreground">
           Custom Deck Design & Installation
         </h2>
-        <p className="text-gray-600 leading-relaxed">
+        <p className="text-muted-foreground leading-relaxed">
           We specialize in creating beautiful, durable decks tailored to your
           unique outdoor living needs. From classic wooden designs to modern
           composite materials, our expert team transforms your backyard into a

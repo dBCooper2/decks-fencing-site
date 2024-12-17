@@ -8,7 +8,7 @@ const AboutPage = () => {
           About Our Company
         </h1>
 
-        <p className="text-lg text-foreground leading-relaxed">
+        <p className="text-lg text-muted-foreground leading-relaxed">
           With over [X] years of experience in deck and fencing installation, we
           pride ourselves on delivering high-quality, customized outdoor
           solutions for residential and commercial properties. Our team of
@@ -18,7 +18,7 @@ const AboutPage = () => {
           aesthetics, and long-lasting value for our customers.
         </p>
 
-        <div className="mt-8 border-t pt-6 text-foreground">
+        <div className="mt-8 border-t pt-6 text-muted-foreground">
           <h2 className="text-xl font-semibold mb-4">Our Commitment</h2>
           <p>
             We are committed to exceptional service, transparent pricing, and
@@ -29,15 +29,21 @@ const AboutPage = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-6 mt-8">
           <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-semibold text-xl mb-2">Material Expertise</h3>
+            <h3 className="font-semibold text-xl text-gray-800 mb-2">
+              Material Expertise
+            </h3>
             <p className="text-gray-600">Wood and Composite Hardwoods</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-semibold text-xl mb-2">Custom Designs</h3>
+            <h3 className="font-semibold text-xl text-gray-800 mb-2">
+              Custom Designs
+            </h3>
             <p className="text-gray-600">Tailored to Your Home & Lifestyle</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-semibold text-xl mb-2">Professional Install</h3>
+            <h3 className="font-semibold text-xl text-gray-800 mb-2">
+              Professional Install
+            </h3>
             <p className="text-gray-600">Precision & Quality Guaranteed</p>
           </div>
         </div>

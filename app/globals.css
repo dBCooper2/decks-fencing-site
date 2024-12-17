@@ -3,88 +3,84 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer base {
-  :root {
-    /* Light mode gradient: Orange to Yellow */
-    --gradient-light-start: 20 100% 60%; /* Bright orange */
-    --gradient-light-end: 50 100% 70%; /* Bright yellow */
+    :root {
+        /* Light mode gradient: Red to Yellow */
+        --gradient-light-start: 0 100% 50%; /* Red */
+        --gradient-light-end: 50 100% 60%; /* Yellow */
+        --background: 50 100% 60%; /* Yellow base */
+        --foreground: 0 0% 0%; /* Black text */
+        --card: 0 100% 50%;
+        --card-foreground: 0 0% 0%;
+        --popover: 0 100% 50%;
+        --popover-foreground: 0 0% 0%;
+        --primary: 0 100% 50%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 50 100% 60%;
+        --secondary-foreground: 0 0% 0%;
+        --muted: 0 50% 50%;
+        --muted-foreground: 0 0% 0%;
+        --accent: 0 100% 50%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 100% 50%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 0 50% 50%;
+        --input: 0 50% 50%;
+        --ring: 0 100% 50%;
+        --radius: 0.5rem;
 
-    /* Original Solarized-inspired variables */
-    --background: 42 87% 96%; /* #fdf6e3 - Light Solarized Background */
-    --foreground: 45 10% 30%; /* Solarized dark text */
-    --card: 42 87% 96%; /* Same as background */
-    --card-foreground: 45 10% 30%;
-    --popover: 42 87% 96%;
-    --popover-foreground: 45 10% 30%;
-    --primary: 160 40% 25%; /* Dark green from dark mode */
-    --primary-foreground: 42 87% 96%; /* Light text on dark green */
-    --secondary: 160 35% 20%; /* Deeper green */
-    --secondary-foreground: 42 87% 96%;
-    --muted: 160 35% 10%; /* Muted green */
-    --muted-foreground: 160 15% 5%;
-    --accent: 160 40% 25%; /* Dark green accent */
-    --accent-foreground: 42 87% 96%;
-    --destructive: 0 84.2% 60.2%; /* Same red for destructive */
-    --destructive-foreground: 42 87% 96%;
-    --border: 160 35% 20%; /* Green border for consistency */
-    --input: 160 35% 20%;
-    --ring: 160 40% 25%; /* Matches primary */
-    --radius: 0.5rem;
+        /* Background gradient for light mode */
+        --background-gradient: linear-gradient(
+            to bottom,
+            theme("colors.red.500"),
+            theme("colors.yellow.300")
+        );
+    }
 
-    /* Background gradient for light mode */
-    --background-gradient: linear-gradient(
-      to bottom, 
-      hsl(var(--gradient-light-start)), 
-      hsl(var(--gradient-light-end))
-    );
-  }
+    .dark {
+        /* Dark mode gradient: Black to Dark Blue */
+        --gradient-dark-start: 0 0% 0%; /* Black */
+        --gradient-dark-end: 240 50% 20%; /* Dark Blue */
+        --background: 240 50% 20%;
+        --foreground: 0 0% 100%;
+        --card: 240 50% 20%;
+        --card-foreground: 0 0% 100%;
+        --popover: 240 50% 20%;
+        --popover-foreground: 0 0% 100%;
+        --primary: 240 50% 20%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 240 40% 15%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 240 30% 25%;
+        --muted-foreground: 0 0% 100%;
+        --accent: 240 50% 20%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 240 50% 20%;
+        --input: 240 50% 20%;
+        --ring: 240 50% 30%;
 
-  .dark {
-    /* Dark mode gradient: Navy Blue to White */
-    --gradient-dark-start: 220 50% 20%; /* Deep navy blue */
-    --gradient-dark-end: 0 0% 100%; /* Pure white */
-
-    --background: 160 25% 10%; /* Dark green background */
-    --foreground: 0 0% 100%; /* White text */
-    --card: 160 25% 10%;
-    --card-foreground: 0 0% 100%;
-    --popover: 160 25% 10%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 160 40% 25%; /* Green primary */
-    --primary-foreground: 0 0% 100%;
-    --secondary: 160 35% 20%; /* Deeper green */
-    --secondary-foreground: 0 0% 100%;
-    --muted: 160 35% 45%; /* Muted green */
-    --muted-foreground: 160 15% 85%;
-    --accent: 160 40% 25%; /* Green accent */
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62.8% 30.6%; /* Same red for destructive */
-    --destructive-foreground: 0 0% 100%;
-    --border: 160 35% 20%; /* Border in dark mode */
-    --input: 160 35% 20%;
-    --ring: 160 30% 70%; /* Subtle green ring */
-
-    /* Background gradient for dark mode */
-    --background-gradient: linear-gradient(
-      to bottom, 
-      hsl(var(--gradient-dark-start)), 
-      hsl(var(--gradient-dark-end))
-    );
-  }
+        /* Background gradient for dark mode */
+        --background-gradient: linear-gradient(
+            to bottom,
+            theme("colors.black"),
+            theme("colors.blue.900")
+        );
+    }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-    background-image: var(--background-gradient);
-    background-attachment: fixed;
-    min-height: 100vh;
-  }
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        background-image: var(--background-gradient);
+        background-attachment: fixed;
+        min-height: 100vh;
+    }
 }
