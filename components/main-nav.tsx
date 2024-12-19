@@ -17,8 +17,8 @@ export function MainNav() {
       <Link
         href="/about"
         className={cn(
-          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
-          pathname === "/about" ? "text-foreground" : "text-foreground/60",
+          "text-sm font-medium transition-colors text-gray-900 hover:text-gray-700/60 dark:text-gray-50 dark:hover:text-gray-300 hidden sm:inline-block",
+          pathname === "/about" ? "text-gray-900" : "text-gray-950/60",
         )}
       >
         About
@@ -26,8 +26,8 @@ export function MainNav() {
       <Link
         href="/decks"
         className={cn(
-          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
-          pathname === "/decks" ? "text-foreground" : "text-foreground/60",
+          "text-sm font-medium transition-colors text-gray-900 hover:text-gray-700/60 dark:text-gray-50 dark:hover:text-gray-300 hidden sm:inline-block",
+          pathname === "/decks" ? "text-gray-900" : "text-gray-950/60",
         )}
       >
         Decks
@@ -35,8 +35,8 @@ export function MainNav() {
       <Link
         href="/fencing"
         className={cn(
-          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
-          pathname === "/fencing" ? "text-foreground" : "text-foreground/60",
+          "text-sm font-medium transition-colors text-gray-900 hover:text-gray-700/60 dark:text-gray-50 dark:hover:text-gray-300  hidden sm:inline-block",
+          pathname === "/fencing" ? "text-gray-900" : "text-gray-950/60",
         )}
       >
         Fencing

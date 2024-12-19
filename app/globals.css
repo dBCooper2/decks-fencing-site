@@ -11,25 +11,19 @@ body {
         /* Light mode gradient: Red to Yellow */
         --gradient-light-start: 0 100% 50%; /* Red */
         --gradient-light-end: 50 100% 60%; /* Yellow */
-        --background: 50 100% 60%; /* Yellow base */
+        --background: 0 85% 61%; /* coral-ish */
         --foreground: 0 0% 0%; /* Black text */
-        --card: 0 100% 50%;
         --card-foreground: 0 0% 0%;
-        --popover: 0 100% 50%;
         --popover-foreground: 0 0% 0%;
-        --primary: 0 100% 50%;
         --primary-foreground: 0 0% 100%;
         --secondary: 50 100% 60%;
         --secondary-foreground: 0 0% 0%;
         --muted: 0 50% 50%;
         --muted-foreground: 0 0% 0%;
-        --accent: 0 100% 50%;
         --accent-foreground: 0 0% 100%;
-        --destructive: 0 100% 50%;
         --destructive-foreground: 0 0% 100%;
         --border: 0 50% 50%;
         --input: 0 50% 50%;
-        --ring: 0 100% 50%;
         --radius: 0.5rem;
 
         /* Background gradient for light mode */
@@ -46,19 +40,14 @@ body {
         --gradient-dark-end: 240 50% 20%; /* Dark Blue */
         --background: 240 50% 20%;
         --foreground: 0 0% 100%;
-        --card: 240 50% 20%;
         --card-foreground: 0 0% 100%;
-        --popover: 240 50% 20%;
         --popover-foreground: 0 0% 100%;
-        --primary: 240 50% 20%;
         --primary-foreground: 0 0% 100%;
         --secondary: 240 40% 15%;
         --secondary-foreground: 0 0% 100%;
         --muted: 240 30% 25%;
         --muted-foreground: 0 0% 100%;
-        --accent: 240 50% 20%;
         --accent-foreground: 0 0% 100%;
-        --destructive: 0 62.8% 30.6%;
         --destructive-foreground: 0 0% 100%;
         --border: 240 50% 20%;
         --input: 240 50% 20%;

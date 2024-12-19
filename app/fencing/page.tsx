@@ -14,17 +14,17 @@ const FencingPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-8 text-center text-foreground">
+      <h1 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-gray-50">
         Professional Fencing Services
       </h1>
 
       <Carousel images={fencingImages} />
 
-      <div className="max-w-3xl mx-auto mt-8 text-center">
-        <h2 className="text-2xl font-semibold mb-4 text-foreground">
+      <div className="bg-header-card bg-gray-50 shadow-lg rounded-lg p-8 max-w-3xl mx-auto mt-8 text-center">
+        <h2 className="text-2xl font-semibold mb-4 text-gray-900">
           Comprehensive Fencing Solutions
         </h2>
-        <p className="text-muted-foreground leading-relaxed">
+        <p className="text-gray-700 leading-relaxed">
           We provide top-quality fencing solutions for residential and
           commercial properties. Whether you need privacy, security, or
           aesthetic enhancement, our team delivers precision-crafted fences

@@ -6,6 +6,15 @@
   - Black Gradient into dark blue for dark mode?
 - Style Each Page to have gradients change for light and dark modes DONE
 - Add Images to homepage DONE
+- Styling:
+  - Homepage
+  - About Page
+  - Deck Page
+  - Fencing Page
+  - Main Nav
+  - Mobile Nav
+  - Mode Toggle
+  - Overall Header
 
 ## Still needs Work
 - Add Details Ed sent

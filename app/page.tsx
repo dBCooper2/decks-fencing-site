@@ -7,25 +7,28 @@ export default function Home(): React.ReactElement {
   return (
     <div className="flex flex-col bg-gradient items-center text-center py-10 px-4">
       {/* Header */}
-      <h1 className="text-4xl md:text-6xl font-bold text-foreground">
+      <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-gray-50">
         Deck & Fencing Company
       </h1>
-      <p className="text-lg md:text-2xl mt-4 text-muted-foreground">
-        Your trusted partner for all your deck and fencing needs
+      <p className="text-lg md:text-2xl mt-4 text-gray-800 dark:text-gray-200">
+        Your trusted partner for all your deck and fencing needs in the greater
+        Wilson County area.
       </p>
 
       {/* Contact Section */}
       <section className="flex flex-col items-center mt-8">
-        <h2 className="text-2xl font-semibold text-foreground">Call Us Now!</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-50">
+          Call Us Now!
+        </h2>
         <Link
           href={siteConfig.links.phone}
-          className="text-xl font-semibold text-muted-foreground mt-2"
+          className="text-xl font-semibold text-gray-900 dark:text-gray-100 mt-2 hover:font-bold"
         >
           (615)-681-0008
         </Link>{" "}
         {/* Placeholder for phone number */}
         <div className="mt-4 text-center max-w-lg">
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-gray-800 dark:text-gray-100">
             We provide top-quality deck and fencing services with a commitment
             to excellence and customer satisfaction. Contact us today to
             transform your outdoor space.
@@ -37,7 +40,7 @@ export default function Home(): React.ReactElement {
       <section className="flex flex-col-reverse md:flex-row justify-center items-center gap-4 my-10 w-full max-w-4xl">
         <Link
           href="/decks"
-          className="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-4"
+          className="w-full md:w-1/2 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow p-4"
         >
           <div className="relative bg-gray-200 h-64 md:h-80 flex items-center justify-center">
             <Image
@@ -54,7 +57,7 @@ export default function Home(): React.ReactElement {
         </Link>
         <Link
           href="/fencing"
-          className="w-full md:w-1/2 bg-white rounded-lg shadow-lg p-4"
+          className="w-full md:w-1/2 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow p-4 "
         >
           <div className="relative bg-gray-200 h-64 md:h-80 flex items-center justify-center">
             <Image
