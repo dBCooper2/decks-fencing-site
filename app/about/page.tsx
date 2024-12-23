@@ -4,18 +4,16 @@ const AboutPage = () => {
   return (
     <div className="container mx-auto px-4 py-12 max-w-3xl">
       <div className="bg-header-card bg-gray-50 shadow-lg rounded-lg p-8 text-center">
-        <h1 className="text-3xl font-bold mb-6 text-gray-900">
+        <h1 className="text-3xl font-bold mb-6 text-gray-900 drop-shadow-lg">
           About Our Company
         </h1>
 
         <p className="text-lg text-gray-700 leading-relaxed">
-          With over [X] years of experience in deck and fencing installation, we
-          pride ourselves on delivering high-quality, customized outdoor
-          solutions for residential and commercial properties. Our team of
-          skilled professionals is dedicated to transforming your outdoor spaces
-          with precision, craftsmanship, and attention to detail. We use premium
-          materials and cutting-edge techniques to ensure durability,
-          aesthetics, and long-lasting value for our customers.
+          Here at Affordable Decks & Fencing, we are committed to keeping things
+          simple, passing savings onto the client, and staying ahead of our
+          competitors. We don&apos;t drive the prices up for you with big
+          warehouses full of equipment and materials, a large office staff or a
+          fleet of company trucks.
         </p>
 
         <div className="mt-8 border-t pt-6 text-gray-700">
@@ -29,19 +27,19 @@ const AboutPage = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-6 mt-8">
           <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-semibold text-xl text-gray-800 mb-2">
+            <h3 className="font-semibold text-xl text-gray-800 mb-2 drop-shadow-md">
               Material Expertise
             </h3>
             <p className="text-gray-600">Wood and Composite Hardwoods</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-semibold text-xl text-gray-800 mb-2">
+            <h3 className="font-semibold text-xl text-gray-800 mb-2 drop-shadow-md">
               Custom Designs
             </h3>
             <p className="text-gray-600">Tailored to Your Home & Lifestyle</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-semibold text-xl text-gray-800 mb-2">
+            <h3 className="font-semibold text-xl text-gray-800 mb-2 drop-shadow-md">
               Professional Install
             </h3>
             <p className="text-gray-600">Precision & Quality Guaranteed</p>

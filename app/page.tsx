@@ -7,7 +7,7 @@ export default function Home(): React.ReactElement {
   return (
     <div className="flex flex-col bg-gradient items-center text-center py-10 px-4">
       {/* Header */}
-      <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-gray-50">
+      <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-gray-50 drop-shadow-lg">
         Affordable Decks & Fencing
       </h1>
       <p className="text-lg md:text-2xl mt-4 text-gray-800 dark:text-gray-200">
@@ -22,7 +22,7 @@ export default function Home(): React.ReactElement {
         </h2>
         <Link
           href={siteConfig.links.phone}
-          className="text-4xl font-semibold text-gray-900 dark:text-gray-100 mt-2 hover:font-bold"
+          className="text-4xl font-semibold text-gray-900 dark:text-gray-100 mt-2 hover:font-bold drop-shadow-lg"
         >
           (615)-681-0008
         </Link>{" "}
@@ -44,7 +44,7 @@ export default function Home(): React.ReactElement {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <h3 className="mt-4 text-lg font-semibold text-gray-800">
+          <h3 className="mt-4 text-lg font-semibold text-gray-800 drop-shadow-md">
             Deck Services
           </h3>
         </Link>
@@ -61,7 +61,7 @@ export default function Home(): React.ReactElement {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <h3 className="mt-4 text-lg font-semibold text-gray-800">
+          <h3 className="mt-4 text-lg font-semibold text-gray-800 drop-shadow-md">
             Fencing Services
           </h3>
         </Link>
