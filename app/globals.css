@@ -9,9 +9,9 @@ body {
 @layer base {
     :root {
         /* Light mode gradient: Red to Yellow */
-        --gradient-light-start: 0 100% 50%; /* Red */
+        --gradient-light-start: 0 85% 53%; /* Red */
         --gradient-light-end: 50 100% 60%; /* Yellow */
-        --background: 0 85% 61%; /* coral-ish */
+        --background: colors.customRed; /* coral-ish */
         --foreground: 0 0% 0%; /* Black text */
         --card-foreground: 0 0% 0%;
         --popover-foreground: 0 0% 0%;
@@ -29,8 +29,8 @@ body {
         /* Background gradient for light mode */
         --background-gradient: linear-gradient(
             to bottom,
-            theme("colors.red.500"),
-            theme("colors.yellow.300")
+            theme("colors.customRed"),
+            theme("colors.customYellow")
         );
     }
 

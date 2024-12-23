@@ -8,7 +8,7 @@ export default function Home(): React.ReactElement {
     <div className="flex flex-col bg-gradient items-center text-center py-10 px-4">
       {/* Header */}
       <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-gray-50">
-        Deck & Fencing Company
+        Affordable Decks & Fencing
       </h1>
       <p className="text-lg md:text-2xl mt-4 text-gray-800 dark:text-gray-200">
         Your trusted partner for all your deck and fencing needs in the greater
@@ -22,18 +22,11 @@ export default function Home(): React.ReactElement {
         </h2>
         <Link
           href={siteConfig.links.phone}
-          className="text-xl font-semibold text-gray-900 dark:text-gray-100 mt-2 hover:font-bold"
+          className="text-4xl font-semibold text-gray-900 dark:text-gray-100 mt-2 hover:font-bold"
         >
           (615)-681-0008
         </Link>{" "}
         {/* Placeholder for phone number */}
-        <div className="mt-4 text-center max-w-lg">
-          <p className="text-lg text-gray-800 dark:text-gray-100">
-            We provide top-quality deck and fencing services with a commitment
-            to excellence and customer satisfaction. Contact us today to
-            transform your outdoor space.
-          </p>
-        </div>
       </section>
 
       {/* Image Cards */}

@@ -74,17 +74,17 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
       {images.length > 1 && (
         <>
           <button
-            className="absolute top-1/2 left-0 -translate-y-1/2
-                     bg-white/50 p-2 rounded-full
-                     hover:bg-white/75 transition z-10"
+            className="hidden sm:block absolute top-1/2 left-0 -translate-y-1/2
+                       bg-white/50 p-2 rounded-full
+                       hover:bg-white/75 transition z-10"
             onClick={scrollPrev}
           >
             <ChevronLeft className="text-gray-800" size={24} />
           </button>
           <button
-            className="absolute top-1/2 right-0 -translate-y-1/2
-                     bg-white/50 p-2 rounded-full
-                     hover:bg-white/75 transition z-10"
+            className="hidden sm:block absolute top-1/2 right-0 -translate-y-1/2
+                       bg-white/50 p-2 rounded-full
+                       hover:bg-white/75 transition z-10"
             onClick={scrollNext}
           >
             <ChevronRight className="text-gray-800" size={24} />
