@@ -6,6 +6,7 @@ import { Icons } from "./icons";
 import { MainNav } from "./main-nav";
 import { MobileNav } from "./mobile-nav";
 import { ModeToggle } from "./mode-toggle";
+import "../app/globals.css";
 
 export function SiteHeader() {
   return (

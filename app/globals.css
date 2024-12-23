@@ -11,7 +11,7 @@ body {
         /* Light mode gradient: Red to Yellow */
         --gradient-light-start: 0 85% 53%; /* Red */
         --gradient-light-end: 50 100% 60%; /* Yellow */
-        --background: colors.customRed; /* coral-ish */
+        --background: 0 85% 53%; /* coral-ish */
         --foreground: 0 0% 0%; /* Black text */
         --card-foreground: 0 0% 0%;
         --popover-foreground: 0 0% 0%;
